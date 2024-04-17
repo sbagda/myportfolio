@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b5699c5e5b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="clocsemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End React Developer</p>
+          <h1>
+            Hi, I'm <span>Sahil</span><br />
+            Bagada From India.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------About-------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/my-logo.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello my name is Sahil Currently I am looking for an entry level
+              position as a computer Engineering in a dynamic firm that value my
+              analytical and technical skills and provides scope for updating my
+              knowledge, I seek a company that will help me contribute to its
+              development while concurrently aiding my personal growth.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML,CSS & JAVASCRIPT</span><br />
+
+                  HTML, CSS, and JavaScript are essential web development
+                  languages used to create and style dynamic and interactive
+                  websites.
+                </li>
+                <li>
+                  <span>React JS</span><br />
+                  React.js is a JavaScript library used for building user
+                  interfaces, offering component-based architecture and
+                  efficient rendering for web applications.
+                </li>
+                <li>
+                  <span>Redux</span><br />
+                  Redux is a predictable state container for JavaScript apps, commonly used with React for managing application state in a single, immutable store.
+                </li>
+                <li>
+                  <span>Git and GitHub</span><br />
+
+                  Git and GitHub are essential tools for version control and
+                  collaborative software development, enabling efficient
+                  tracking of changes, managing project workflows, and
+                  facilitating team collaboration through centralized
+                  repositories.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Cipher Craft Pvt Ltd - Rajkot</span><br />
+                  Under the Cipher Craft Company, I understood web development
+                  with their development team and worked on many projects. -
+                  JavaScript, Git and GitHub, React JS, System Design.
+                  <br /><br />
+                  (Jan ’15-april ‘15)
+                </li>
+                <li>
+                  <span>CreArt Solutions - Ahmedabad</span><br />
+                  In the CreArt Solution company, I worked with their
+                  development team and involve in such great Project. - HTML &
+                  CSS, PHP(Basics), PHP Laravel (Basics). <br /><br />
+                  (Jul ’27-Aug ‘10)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br />
+                  Computer Engineering | Government Engg. Collage, Rajkot <br />
+                  CGPA: 7.96
+                </li>
+                <li>
+                  <span>2020</span><br />
+                  XII (GSEB) | Shree Vallabha Vidyalaya, Upleta. <br />
+                  62.5%
+                </li>
+                <li>
+                  <span>2018</span><br />
+                  X (GSEB) | Shree Shahid Smarak Madhyamik School, Kharchia
+                  <br />
+                  69.7%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------services------------------>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-free-code-camp"></i>
+            <h2>Web devlopment</h2>
+            <p>
+              Our web development service harnesses the power of HTML, CSS, and JavaScript to craft stunning and responsive websites tailored to your unique needs. From sleek and modern designs to robust functionality and seamless user experiences, our team ensures your online presence stands out in today's competitive digital landscape
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-instalod"></i>
+            <h2>UI Design</h2>
+            <p>
+              While HTML, CSS, and JavaScript are foundational for web development, they're not typically the primary skills associated with UI design services. UI design typically involves architecting and planning the structure and functionality of complex software systems, focusing on scalability, reliability, and performance.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Web Design</h2>
+            <p>
+              Your website is often the first point of contact between your business and potential customers. Make it count with a comprehensive web design solution from us. Contact us today to discuss your project and take the first step towards a powerful online presence that drives results.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.jpg" />
+            <div class="layer">
+              <h3>Amazon Clone – Ecommerce Website System Design</h3>
+              <p>
+                Amazon Cloning a interface of the Ecommerce website – HTML & CSS
+              </p>
+              <a href="#">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.jpg" />
+            <div class="layer">
+              <h3>Speak Easy – APIs based Text to Speech Converter</h3>
+              <p>
+                Speak Easy is a web app enabling users to convert text input
+                into spoken audio, enhancing accessibility and user engagement –
+                React JS, APIs.
+              </p>
+              <a href="#">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.jpg" />
+            <div class="layer">
+              <h3>Myntra Clone – Ecommerce Website</h3>
+              <p>
+                Myntra Clone is e-commerce website replicating Myntra's
+                features, offering a wide range of fashion products. – React JS,
+                System Design.
+              </p>
+              <a href="#">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> gmail@exmaple.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i> 9985984598</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="images/My_CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright By Sahil Bagada. <i class="fa-solid fa-heart"></i> Make It
+          Easy
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function clocsemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz3uRfHtc5hxsa957A71GctyPlYjFBH4Yt4r5RQaXsUg5sdoa2Me_uJpIm7II6_qqDX/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
